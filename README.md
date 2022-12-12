@@ -36,5 +36,6 @@ $ npx ts-node override-bin/bin/cli.ts -h
 
 ## 插件 demo
 
+- plugins/plugin-check-update `检查更新`
 - plugins/plugin-codegen `codegen 指令`
 - plugins/plugin-codegen-extra `拓展 codegen 指令`
