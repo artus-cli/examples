@@ -1,0 +1,5 @@
+{
+  "name": "egg-bin",
+  "type": "commonjs",
+  "bin": "./bin/cli.js"
+}

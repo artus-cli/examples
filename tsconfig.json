@@ -1,0 +1,18 @@
+{
+  "extends": "@artus/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "sourceMap": false,
+    "inlineSourceMap": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals":false,
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "paths": {
+      "plugin-*": [ "./plugins/plugin-*" ]
+    }
+  },
+  "ts-node": {
+    "require": [ "./global.ts" ]
+  }
+}
