@@ -10,7 +10,7 @@ on:
   workflow_dispatch: {}
 
 jobs:
-  test-job:
+  Task:
     uses: artus-cli/.github/.github/workflows/ci.yml@master
     strategy:
       matrix:
