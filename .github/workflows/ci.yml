@@ -9,15 +9,15 @@ on:
     - cron: '0 2 * * *'
   workflow_dispatch:
 
-
 jobs:
   Job:
-    uses: artus-cli/.github/.github/workflows/ci.yml@master
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-        node-version: [16, 18]
-    with:
-      os: ${{ matrix.os }}
-      node-version: ${{ matrix.node-version }}
-      ci-script: cov
+    uses: artus-cli/.github/.github/workflows/ci-all.yml@master
+    # strategy:
+    #   fail-fast: false
+    #   matrix:
+    #     os: [ ubuntu-latest, macos-latest, windows-latest ]
+    #     node-version: [ 16, 18 ]
+    # with:
+    #   os: ${{ matrix.os }}
+    #   node-version: ${{ matrix.node-version }}
+    #   ci-script: cov
