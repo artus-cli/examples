@@ -9,6 +9,7 @@ on:
     - cron: '0 2 * * *'
   workflow_dispatch:
 
+
 jobs:
   Job:
     uses: artus-cli/.github/.github/workflows/ci.yml@master
