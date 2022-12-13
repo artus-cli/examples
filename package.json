@@ -5,18 +5,16 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --ext .ts",
-    "tsc": "rm -rf dist && tsc"
+    "tsc": "rm -rf dist && tsc",
+    "ci": "npm run tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/artus-cli/examples.git"
+    "url": "git@github.com:artus-cli/examples.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/artus-cli/examples/issues"
-  },
-  "homepage": "https://github.com/artus-cli/examples#readme",
+  "author": "TZ",
+  "license": "MIT",
+  "homepage": "https://github.com/artus-cli/examples",
   "dependencies": {
     "@artus-cli/artus-cli": "beta",
     "@artus/eslint-config-artus": "^0.0.1",
