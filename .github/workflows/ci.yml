@@ -11,16 +11,5 @@ on:
 
 jobs:
   Job:
-    uses: artus-cli/.github/.github/workflows/ci.yml@ci
-    with:
-      ci-script: cov
-
-    # strategy:
-    #   fail-fast: false
-    #   matrix:
-    #     os: [ ubuntu-latest, macos-latest, windows-latest ]
-    #     node-version: [ 16, 18 ]
-    # with:
-    #   os: ${{ matrix.os }}
-    #   node-version: ${{ matrix.node-version }}
-    #   ci-script: cov
+    name: Node.js
+    uses: artus-cli/.github/.github/workflows/ci.yml@master
