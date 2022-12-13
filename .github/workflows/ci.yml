@@ -11,7 +11,9 @@ on:
 
 jobs:
   Job:
-    uses: artus-cli/.github/.github/workflows/ci-all.yml@master
+    uses: artus-cli/.github/.github/workflows/ci.yml@ci
+    with:
+      ci-script: cov
 
     # strategy:
     #   fail-fast: false
