@@ -7,8 +7,7 @@ on:
     branches: [ master ]
   schedule:
     - cron: '0 2 * * *'
-  workflow_dispatch: {}
-
+  workflow_dispatch:
 
 jobs:
   Job:
@@ -20,3 +19,4 @@ jobs:
     with:
       os: ${{ matrix.os }}
       node-version: ${{ matrix.node-version }}
+      ci-script: cov
