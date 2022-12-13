@@ -12,6 +12,7 @@ on:
 jobs:
   Job:
     uses: artus-cli/.github/.github/workflows/ci-all.yml@master
+
     # strategy:
     #   fail-fast: false
     #   matrix:
