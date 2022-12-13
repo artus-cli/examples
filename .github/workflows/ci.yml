@@ -13,3 +13,7 @@ jobs:
   Job:
     name: Node.js
     uses: artus-cli/.github/.github/workflows/ci.yml@master
+    # pass these inputs only if you need to custom
+    # with:
+    #   os: 'ubuntu-latest, macos-latest, windows-latest'
+    #   version: '16, 18'
