@@ -1,6 +1,6 @@
-import { DefineCommand, Command } from '@artus-cli/artus-cli';
+import { DefineCommand } from '@artus-cli/artus-cli';
 import { ModuleMainCommand } from './main';
-import { DebugCommand } from 'egg-bin/src';
+import { DebugCommand } from 'egg-bin';
 
 @DefineCommand({
   description: 'Module Debug Commands',

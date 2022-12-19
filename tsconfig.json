@@ -8,7 +8,7 @@
     "noUnusedLocals":false,
     "resolveJsonModule": true,
     "paths": {
-      "*": [ "./*" ],
+      "*": [ "./*/src" ],
       "plugin-*": [ "./plugins/plugin-*" ]
     }
   },
