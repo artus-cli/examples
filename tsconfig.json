@@ -7,8 +7,8 @@
     "noUnusedParameters": false,
     "noUnusedLocals":false,
     "resolveJsonModule": true,
-    "outDir": "dist",
     "paths": {
+      "*": [ "./*" ],
       "plugin-*": [ "./plugins/plugin-*" ]
     }
   },

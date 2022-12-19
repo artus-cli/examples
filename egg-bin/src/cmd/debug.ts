@@ -12,7 +12,7 @@ interface DebugOption extends DevOption {
 export class DebugCommand extends DevCommand {
   @DefineOption<DebugOption>({
     flags: {
-      type: 'number',
+      type: 'string',
       alias: 'f',
       default: 0,
     },

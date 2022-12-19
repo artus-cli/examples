@@ -11,9 +11,9 @@ export interface TestOption {
 })
 export class TestCommand extends Command {
   @DefineOption()
-  options: TestOption;
+  args: TestOption;
 
   async run() {
-    console.info('test files', this.options.file);
+    console.info('test files', this.args.file);
   }
 }

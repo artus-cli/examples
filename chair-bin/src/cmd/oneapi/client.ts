@@ -6,9 +6,9 @@ import { DefineCommand, DefineOption, OptionProps } from '@artus-cli/artus-cli';
 })
 export class OneapiClientCommand {
   @DefineOption()
-  options: any;
+  args: any;
 
   async run() {
-    console.info('oneapi client', this.options.appName);
+    console.info('oneapi client', this.args.appName);
   }
 }

@@ -1,14 +1,14 @@
 import { DefineCommand, Command } from '@artus-cli/artus-cli';
 import { ModuleMainCommand } from './main';
-import { DebugCommand } from 'egg-bin';
+import { ChairDevCommand } from '../dev';
 
 @DefineCommand({
-  description: 'Module Debug Commands',
+  description: 'Module Dev Commands',
   parent: ModuleMainCommand,
 })
-export class ModuleDebugCommand extends DebugCommand {
+export class ModuleDevCommand extends ChairDevCommand {
   async run() {
-    console.info('module is debug in', this.args.baseDir);
+    console.info('module is dev in', this.args.baseDir);
     return {} as any;
   }
 }
