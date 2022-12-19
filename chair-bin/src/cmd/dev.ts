@@ -1,5 +1,5 @@
 import { DefineCommand, DefineOption, Middleware } from '@artus-cli/artus-cli';
-import { DevCommand as BaseDevCommand, DevOption as BaseDevOption } from 'egg-bin/src';
+import { DevCommand as BaseDevCommand, DevOption as BaseDevOption } from 'egg-bin';
 
 export interface DevOption extends BaseDevOption {
   other?: string;

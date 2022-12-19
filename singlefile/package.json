@@ -1,5 +1,5 @@
 {
   "name": "simple-bin",
   "type": "commonjs",
-  "bin": "./bin/cli.js"
+  "bin": "dist/bin/cli.js"
 }
