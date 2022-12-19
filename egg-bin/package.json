@@ -1,5 +1,6 @@
 {
   "name": "egg-bin",
   "type": "commonjs",
+  "main": "./src/index.ts",
   "bin": "./bin/cli.js"
 }
