@@ -2,6 +2,7 @@
   "extends": "@artus/tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
+    "outDir": "dist",
     "inlineSourceMap": true,
     "resolveJsonModule": true,
     "paths": {
