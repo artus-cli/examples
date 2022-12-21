@@ -18,7 +18,7 @@
   "license": "MIT",
   "homepage": "https://github.com/artus-cli/examples",
   "dependencies": {
-    "@artus-cli/artus-cli": "beta",
+    "@artus-cli/artus-cli": "latest",
     "@artus/eslint-config-artus": "^0.0.1",
     "@artus/tsconfig": "^1.0.1",
     "@types/lodash": "^4.14.191",

@@ -14,7 +14,7 @@ export class DebugCommand extends DevCommand {
     flags: {
       type: 'string',
       alias: 'f',
-      default: 0,
+      default: '0',
     },
   })
   args: DebugOption;
