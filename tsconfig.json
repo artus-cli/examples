@@ -2,10 +2,8 @@
   "extends": "@artus/tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
-    "sourceMap": false,
+    "outDir": "dist",
     "inlineSourceMap": true,
-    "noUnusedParameters": false,
-    "noUnusedLocals":false,
     "resolveJsonModule": true,
     "paths": {
       "*": [ "./*/src" ],

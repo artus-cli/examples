@@ -13,7 +13,7 @@ export default class UsageLifecycle implements ApplicationLifecycle {
   @LifecycleHook()
   async configDidLoad() {
     // prevent ctrl c
-    this.program.useInExecution(CheckUpdateCommand, async (ctx: CommandContext, next) => {
+    this.program.useInExecution(CheckUpdateCommand, async (_ctx: CommandContext, next) => {
       process.removeAllListeners('SIGINT');
       process.stdin.resume();
   
