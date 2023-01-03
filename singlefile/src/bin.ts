@@ -1,24 +1,17 @@
 #!/usr/bin/env node
 
-import { start, DefineCommand, Command, DefineOption } from '@artus-cli/artus-cli';
-
-interface Option {
-  silent?: boolean;
-}
+import { start, DefineCommand, Command, Option } from '@artus-cli/artus-cli';
 
 @DefineCommand()
 export class SinglefileCommand extends Command {
-  @DefineOption({
-    silent: {
-      type: 'boolean',
-      description: 'Silent!!',
-      alias: 's',
-    },
+  @Option({
+    alias: 's',
+    description: 'Silent!!',
   })
-  opt: Option;
+  silent: boolean;
 
   async run() {
-    if (!this.opt.silent) {
+    if (!this.silent) {
       console.info('🚀🚀🚀 singlefile 🚀🚀🚀');
     } else {
       console.info('🤫🤫🤫');

@@ -1,8 +1,4 @@
-import { DefineCommand, DefineOption, Command } from '@artus-cli/artus-cli';
-
-export interface TestOption {
-  file: string[]
-}
+import { DefineCommand, Command, Option } from '@artus-cli/artus-cli';
 
 @DefineCommand({
   command: 'test [file...]',
@@ -10,10 +6,10 @@ export interface TestOption {
   alias: [ 't' ],
 })
 export class TestCommand extends Command {
-  @DefineOption()
-  args: TestOption;
+  @Option()
+  file: string[];
 
   async run() {
-    console.info('test files', this.args.file);
+    console.info('test files', this.file);
   }
 }
