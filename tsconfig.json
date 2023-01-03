@@ -2,13 +2,11 @@
   "extends": "@artus/tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
-    "sourceMap": false,
-    "inlineSourceMap": true,
-    "noUnusedParameters": false,
-    "noUnusedLocals":false,
-    "resolveJsonModule": true,
     "outDir": "dist",
+    "inlineSourceMap": true,
+    "resolveJsonModule": true,
     "paths": {
+      "*": [ "./*/src" ],
       "plugin-*": [ "./plugins/plugin-*" ]
     }
   },

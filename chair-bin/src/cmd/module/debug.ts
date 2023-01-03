@@ -1,4 +1,4 @@
-import { DefineCommand, Command } from '@artus-cli/artus-cli';
+import { DefineCommand } from '@artus-cli/artus-cli';
 import { ModuleMainCommand } from './main';
 import { DebugCommand } from 'egg-bin';
 
@@ -8,7 +8,7 @@ import { DebugCommand } from 'egg-bin';
 })
 export class ModuleDebugCommand extends DebugCommand {
   async run() {
-    console.info('module is debug in', this.args.baseDir);
+    console.info('module is debug in', this.baseDir);
     return {} as any;
   }
 }

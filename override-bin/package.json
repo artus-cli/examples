@@ -2,5 +2,6 @@
   "name": "override-bin",
   "version": "0.0.1",
   "type": "commonjs",
-  "bin": "./bin/cli.js"
+  "main": "dist/index.js",
+  "bin": "dist/bin/cli.js"
 }

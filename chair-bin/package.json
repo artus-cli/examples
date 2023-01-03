@@ -2,5 +2,6 @@
   "name": "chair-bin",
   "version": "0.0.1",
   "type": "commonjs",
-  "bin": "./bin/cli.js"
+  "main": "dist/index.ts",
+  "bin": "dist/bin/cli.ts"
 }
