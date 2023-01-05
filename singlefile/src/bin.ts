@@ -19,4 +19,4 @@ export class SinglefileCommand extends Command {
   }
 }
 
-start({ baseDir: __dirname });
+start();
