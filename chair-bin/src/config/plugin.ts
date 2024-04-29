@@ -1,4 +1,9 @@
 export default {
+  eggBin: {
+    enable: true,
+    package: 'egg-bin',
+  },
+
   codegen: {
     enable: true,
     package: 'plugin-codegen',
